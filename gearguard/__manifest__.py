@@ -5,7 +5,7 @@
     'description': 'Module for GearGuard',
     'category': 'Uncategorized',
     'author': 'Your Name',
-    'depends': ['base'],
+    'depends': ['base', 'mail'],
     'data': [
         'security/ir.model.access.csv',
         'views/views.xml',
