@@ -1,0 +1,38 @@
+<odoo>
+  <data>
+    <record id="view_gearguard_model_form" model="ir.ui.view">
+      <field name="name">gearguard.model.form</field>
+      <field name="model">gearguard.model</field>
+      <field name="arch" type="xml">
+        <form string="GearGuard">
+          <sheet>
+            <group>
+              <field name="name"/>
+              <field name="description"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="view_gearguard_model_tree" model="ir.ui.view">
+      <field name="name">gearguard.model.tree</field>
+      <field name="model">gearguard.model</field>
+      <field name="arch" type="xml">
+        <tree string="GearGuard">
+          <field name="name"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="action_gearguard_model" model="ir.actions.act_window">
+      <field name="name">GearGuard</field>
+      <field name="res_model">gearguard.model</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_gearguard_root" name="GearGuard" sequence="10"/>
+    <menuitem id="menu_gearguard_model" name="GearGuard" parent="menu_gearguard_root" action="action_gearguard_model"/>
+  </data>
+</odoo>

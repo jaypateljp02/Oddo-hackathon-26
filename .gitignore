@@ -1,0 +1,19 @@
+# Odoo
+*.pyc
+*.pyo
+__pycache__/
+
+# Log files
+*.log
+
+# PyCharm / VSCode
+.idea/
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Odoo specific
+.env
+filestore/
+dump/
