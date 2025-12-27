@@ -62,7 +62,7 @@
                     <!-- Smart Button: Link to Request Count [cite: User Request] -->
                     <div class="oe_button_box" name="button_box">
                         <button name="action_view_requests" type="object" class="oe_stat_button" icon="fa-wrench">
-                            <field name="request_count" widget="statinfo" string="Requests"/>
+                            <field name="request_count" widget="statinfo" string="Maintenance"/>
                         </button>
                     </div>
                     <div class="oe_title">
@@ -149,10 +149,9 @@
         <field name="name">gearguard.request.calendar</field>
         <field name="model">gearguard.request</field>
         <field name="arch" type="xml">
-            <calendar string="Maintenance Requests" date_start="scheduled_date" color="technician_id">
+            <calendar string="Maintenance Calendar" date_start="scheduled_date" color="technician_id" mode="month">
                 <field name="name"/>
                 <field name="equipment_id"/>
-                <field name="technician_id"/>
             </calendar>
         </field>
     </record>
