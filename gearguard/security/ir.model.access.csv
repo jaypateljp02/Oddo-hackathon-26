@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_gearguard_model,gearguard.model,model_gearguard_model,base.group_user,1,1,1,1
+access_gearguard_team,gearguard.team,model_gearguard_team,base.group_user,1,1,1,1
+access_gearguard_equipment,gearguard.equipment,model_gearguard_equipment,base.group_user,1,1,1,1
+access_gearguard_request,gearguard.request,model_gearguard_request,base.group_user,1,1,1,1
